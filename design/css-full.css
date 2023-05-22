@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/************ Global Styles *************/ 
+body {
+    background-color: hsl(36, 100%, 99%);
+    font-size: 15px;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Space Mono', monospace;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/************ Nav Bar styles *************/ 
+
+/************ Main styles + Aside container *************/ 
+
+
+.main-wrapper .img-wrapper {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url(/assets/images/image-web-3-desktop.jpg);
+    background-size: cover;
+}
+
+.main-wrapper .button-wrapper {
+    display: inherit;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.main-wrapper .aside-wrapper {
+    display:inherit;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.button-wrapper button {
+    background-color:hsl(5, 85%, 63%);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-color:hsl(5, 85%, 63%) ;
+    color:hsl(36, 100%, 99%);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-top: 30%;
+}
+
+.main-wrapper h1 {
+    font-size: 4rem;
+    font-weight:bolder;
+}
+
+.button-wrapper p {
+    font-size: 2rem;
+    color:hsl(236, 13%, 42%);
+}
+/************ aside styles *************/ 
+
+.aside-wrapper {
+    background-color:hsl(240, 100%, 5%);
+    color: aliceblue;
+}
+.aside-wrapper aside {
+    height:inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+aside h2 {
+    color: hsl(35, 77%, 62%);
+    font-size: 2rem;
+}
+
+aside div h3 {
+    color:hsl(36, 100%, 99%);
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+aside div p {
+    color:hsl(233, 8%, 79%) ;
+    margin-bottom: 20px;
+}
+
+aside div {
+    border-bottom: 2px solid hsl(233, 8%, 79%) ;
+}
+
+
+/************ Article Styles *************/ 
+
+.cards-section {
+    margin-top: 5%;
+}
+.mini-card {
+    display: inherit;
+    /* background-image: url(/assets/images/image-retro-pcs.jpg); */
+    background-repeat: no-repeat;
+    background-size:contain;
+    grid-column-start: 1;
+    grid-column-end:2;
+    background-position: center;
+}
+
+.mini-card2 {
+    display: inherit;
+    /* background-image: url(/assets/images/image-top-laptops.jpg); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-column-start: 1;
+    grid-column-end:2;
+    background-position: center;
+    
+}
+.mini-card3 {
+    display: inherit;
+    /* background-image: url(/assets/images/image-gaming-growth.jpg); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-column-start: 1;
+    grid-column-end:2;
+    background-position: center;
+    
+}
+article {
+    width: 100%;
+    display: grid;
+    grid-template-rows:400px;
+    grid-template-columns:200px auto;
+    margin-bottom: 5%;
+}
+
+
+article h3 {
+    font-size: 2rem;
+    color: hsl(233, 8%, 79%) ;
+    padding-left: 15px;
+}
+
+article h4 {
+    font-size: 1.2rem;
+    padding-left: 15px;
+}
+
+article p {
+    font-size: 1rem;
+    color:hsl(236, 13%, 42%) ;
+    padding-left: 15px;
+}
+
+.attribution {
+    margin-top: 5%;
+}
+
+@media screen and (min-width: 768px) {
+    .main-wrapper {
+        width: 94%;
+        display: grid;
+        grid-template-rows:2fr 2fr;
+        grid-template-columns: 33% 30% 34%;
+        gap: 20px;
+        margin-left: 3%;
+        margin-right: 3%;
+       }
+    
+    
+
+    .navbar-wrapper {
+        display:flex;
+        width: 94%;
+        align-items: center;
+        justify-content:space-between;
+        margin-top: 3%;
+        margin-bottom: 2%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    .navbar-wrapper ul {
+        list-style: none;
+    }
+    
+    .navbar-links {
+        display:flex;
+    }
+    
+    .navbar-links li {
+        padding: 10px;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+    
+    .navbar-links li a {
+        text-decoration: none;
+    }
+    
+    .navbar-links li a:link {
+        color: hsl(236, 13%, 42%);
+    }
+    html {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+
+    .main-wrapper .img-wrapper {
+        height:300px;
+        background-position: center;
+    }
+    .navbar-wrapper ul {
+        display: none;
+    }
+
+    .navbar-wrapper {
+        margin-top:5%;
+        margin-bottom: 3%;
+    }
+    .button-wrapper button {
+        margin-top: 10%;
+    }
+    .main-wrapper h1 {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .main-wrapper .button-wrapper {
+        margin-bottom: 5%;
+    }
+
+    .main-wrapper .aside-wrapper {
+        margin-bottom: 5%;
+    }
+
+    
+
+    .main-wrapper {
+        margin-left: 3%;
+        margin-right: 6%;
+    }
+    .cards-section {
+        margin-left: 3%;
+        margin-right: 6%; 
+    }
+
+    .navbar-wrapper {
+        margin-left: 3%;
+        margin-right: 6%;
+    }
+    article {
+        width: 100%;
+        display: grid;
+        grid-template-rows:200px;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .cards-section {
+        width:94%;
+        display: grid;
+        grid-template-rows: 400px;
+        grid-template-columns:33% 30% 33%;
+        gap: 20px;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: 50px;
+    }
+    
+} 
+
+@media screen and (max-width: 1249px) {
+    article {
+        width: 100%;
+        display: grid;
+        grid-template-rows:400px;
+        grid-template-columns:200px auto;
+        margin-bottom: 5%;
+        justify-content:space-evenly;
+    }
+    
+}
